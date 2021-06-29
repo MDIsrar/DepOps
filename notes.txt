@@ -1,0 +1,111 @@
+DevOps (Develop Team & Operation Team) Overview
+(DevOps is not a Technology. It is Methodology.)
+	Waterfall Model->
+		Traditional Waterfall Model->
+			Requirement and Gathering Analysis
+			Design
+			Implement
+			Test
+			Deploy
+			Maintenance
+			
+			Disadvantage ->
+				If application have any bug. You have to go through the entire source to find the bug.
+	
+	What is Agile Methodology?
+		1. In the Agile Methodology each project is broken up into several 'iterations'
+		2. All Iterations should be of the same time duration (between 2 to 8 weeks)
+		3. At the end of each iteration, a working product should be delivered
+		
+	DevOps Stages->
+		Version Control -> Maintains different versions of the code (Source Code Management)
+		Continous Integration -> Compile, validate, Code Review, Unit Testing, Integration Testing (Continous Build) (Jenkins Tool)
+		Continous Delivery -> Deploying the build application to test servers, Performing UAT (Continous Testing)
+		Continous Deployment -> Deploying the tested application on the prod server for release (Configuration Management & Containerization (Docker)) (Puppet)
+		
+		Continous Monitoring Tool -> Nagios
+		
+		
+	DevOps Use-Case Part - 1
+		Working On Docker -> timeStamp : 56:00
+	
+	DevOps Use-Case Part - 1 : timeStamp : 1:00:10
+	
+
+Version Control Using Git & Github : timeStamp : 1:00:27
+	Version Control - What & Why? : timeStamp : 1:01:37 -> 
+	Version Control Tools : timeStamp : 1:10:56 ->
+		git
+		subversion
+		CVS
+		mercurial
+	Github & Git : timeStamp : 1:13:07 -> 
+	Case Study : Dominion Enterprises : timeStamp : 1:17:06 ->
+		What is Git? : timeStamp : 1:20:36 ->
+	Git Features : timeStamp : 1:21:23 ->
+	Git Operations & Commands : timeStamp : 1:35:15 ->
+	
+Continous Integration Using Jenkins : timeStamp : 2:27:05
+	Why we need Continous Integration?
+	What is Continous Integration?
+	Continous Integration Tools : timeStamp : 2:36:39 ->
+		Jenkins
+		Buildbot
+		Travis CI
+		Atlassian Bamboo
+	What Is Jenkins?
+	Jenkins Distributed Architecture?
+	Hands-On
+
+Introduction to Docker : timeStamp : 2:56:59 ->
+	Why we need Docker? : timeStamp : 2:57:58 ->
+		An application works in developer's laptop not in testing or production. This is due to difference in computing between Dev, Test and Prod.
+		in Dev there can be a software that is upgraded and in Prod the old version of software might be present.
+	What is Docker? : timeStamp : 3:01:49 -> Docker is containerization platform.
+		
+	Docker Example
+	Docker Case Study
+	Docker Components
+	Hands-On
+	
+Kubernetes Installation : 3:21:21 ->
+	
+Introduction to Kubernetes : 3:48:30 -> Docker is container management platform.
+	Need for Kubernetes
+	Features Of Kubernetes : 3:57:58 ->
+	Kubernetes Vs Docker Swarm : 4:10:56 ->
+	What exactly it is & what its not?
+	How does Kubernetes works?
+	Use-Case : Kubernetes @Pokemon Go
+	Architecture Of Kubernetes : 4:18:46 ->
+	Hands-on : Deployment with Kubernetes : 4:21:49 ->
+	
+Introduction to Ansible : 4:52:05 -> 
+	Before & After Configuration Managements
+	What is Ansible?
+	Features of Ansible
+	Ansible Case Study : NASA
+	Ansible for Orchestration
+	Ansible for Provisioning
+	Ansible for Configuration Management
+	Ansible for Configuration Management
+	Ansible for Security
+	Write Ansible Playbooks to Install LAMP Stack and Host a Website
+	
+Introduction to Puppet : 5:48:21 ->
+
+Continous Monitoring using Nagios : 6:21:00 ->
+	What is Continous Monitoring? : 6:23:28 ->
+	Continous Monitoring Tools : 6:29:35 ->
+		Amazon CloudWatch
+		Splunk
+		elastic
+		Nagios
+		logstash
+		kibana
+	What Is Nagios? : 6:30:18 -> Nagios monitors your entire IT infrastructure to ensure systems, applications, services, and business processes are functioning properly.
+	Nagios Features : 6:32:10 -> 
+	Nagios Case-Study : 6:37:15 ->
+	Demo : 6:40:52 ->
+
+	Why We Need Continous Monitoring? : 6:21:39

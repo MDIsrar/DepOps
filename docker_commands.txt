@@ -1,0 +1,35 @@
+sudo apt-get update
+sudo apt-get install linux-image-extra-$(uname -r) linux-image-exra-virtual
+sudo apt-get install docker-engine
+sudo service docker start
+sudo docker pull centos
+sudo docker run -it centos
+sudo apt-get install python-pip
+sudo pip install docker-compose
+mkdir wordpress
+sudo gedit docker-compose.yml
+sudo docker-compose up -d
+
+
+/////////////// docker-compose.yml file content //////////////////////
+
+wordpress:
+	image:wordpress
+	links:
+	- wordpress_db:mysql
+	ports:
+	-8080:80
+wordpress_db:
+image:mariadb
+environment:
+	MYSQL_ROOT_PASSWORD: edureka
+phpmyadmin
+	image:corbinu/docker-phpmyadmin
+	links:
+	-wordpress_db:mysql
+	ports:
+	-8181:80
+	environment:
+	MYSQL_USERNAME:root
+	MYSQL_ROOT_PASSWORD:edureka
+	
